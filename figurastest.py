@@ -18,7 +18,13 @@ class TestFiguras(unittest.TestCase):
 
     def test_area_cuadrado_lado_g(self):
         resultado= self.figura.cuadrado('g')
+
         self.assertEquals('dato incorrecto',resultado)
+       
+    def test_area_cuadrado_lado_siete(self):
+        resultado= self.figura.cuadrado(7)
+
+        self.assertEquals(49,resultado)
 
     def tearDown(self):
         pass
